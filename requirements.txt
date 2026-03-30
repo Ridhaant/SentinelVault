@@ -1,0 +1,25 @@
+# SentinelVault — Requirements
+# Core (required)
+pytz>=2023.3
+plotly>=5.17.0
+dash>=2.17.0
+dash-bootstrap-components>=1.5.0
+
+# Cryptography (highly recommended — enables AES-256-GCM, RSA, ECDSA, ECDH)
+cryptography>=42.0.0
+
+# Password hashing (OWASP recommended — Argon2id)
+argon2-cffi>=23.1.0
+
+# TOTP 2FA (RFC 6238)
+pyotp>=2.9.0
+
+# JWT tokens
+PyJWT>=2.8.0
+
+# Ethereum utils (optional — improves Keccak-256 accuracy)
+# eth-hash[pysha3]>=0.5.2
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
