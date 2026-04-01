@@ -80,6 +80,17 @@ graph TD
 
 ---
 
+## 📂 Files to Upload
+
+When publishing this standalone repository, upload these exact files from the AlgoStack codebase:
+- `enterprise_auth.py` — Core TOTP 2FA, RBAC, and fallback code generation logic
+- `secrets_audit.py` — CI secret scanning regex engine
+- `.githooks/pre-commit` — Git hook configuration enforcing secret hygiene
+- `requirements.txt` — (Must include `pyotp`, `bcrypt`, `flask-login`)
+- This `README.md`
+
+---
+
 ## 🔗 Proven in Production
 
 Secures [AlgoStack](https://github.com/Ridhaant/AlgoStack) — a 30,595-line, 16-process live trading platform. Every auth event, every price write, every IPC message passes through SentinelVault's security controls.
